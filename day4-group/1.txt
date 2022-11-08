@@ -1,0 +1,269 @@
+runtime: goroutine stack exceeds 1000000000-byte limit
+runtime: sp=0xc020160380 stack=[0xc020160000, 0xc040160000]
+fatal error: stack overflow
+
+runtime stack:
+runtime.throw({0x1284f09?, 0x143bf60?})
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/panic.go:1047 +0x5d fp=0x7ffeefbfe878 sp=0x7ffeefbfe848 pc=0x103577d
+runtime.newstack()
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/stack.go:1103 +0x5cc fp=0x7ffeefbfea30 sp=0x7ffeefbfe878 pc=0x104e76c
+runtime.morestack()
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/asm_amd64.s:570 +0x8b fp=0x7ffeefbfea38 sp=0x7ffeefbfea30 pc=0x1062e4b
+
+goroutine 1 [running]:
+base3/gee.(*RouterGroup).addRoute(0xc00002c240?, {0x12824b1?, 0x3?}, {0x12f6020?, 0x1?}, 0x12b0678?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:43 +0x52 fp=0xc020160390 sp=0xc020160388 pc=0x121f112
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201603d0 sp=0xc020160390 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160410 sp=0xc0201603d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160450 sp=0xc020160410 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160490 sp=0xc020160450 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201604d0 sp=0xc020160490 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160510 sp=0xc0201604d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160550 sp=0xc020160510 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160590 sp=0xc020160550 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201605d0 sp=0xc020160590 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160610 sp=0xc0201605d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160650 sp=0xc020160610 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160690 sp=0xc020160650 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201606d0 sp=0xc020160690 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160710 sp=0xc0201606d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160750 sp=0xc020160710 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160790 sp=0xc020160750 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201607d0 sp=0xc020160790 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160810 sp=0xc0201607d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160850 sp=0xc020160810 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160890 sp=0xc020160850 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201608d0 sp=0xc020160890 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160910 sp=0xc0201608d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160950 sp=0xc020160910 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160990 sp=0xc020160950 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201609d0 sp=0xc020160990 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160a10 sp=0xc0201609d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160a50 sp=0xc020160a10 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160a90 sp=0xc020160a50 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160ad0 sp=0xc020160a90 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160b10 sp=0xc020160ad0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160b50 sp=0xc020160b10 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160b90 sp=0xc020160b50 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160bd0 sp=0xc020160b90 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160c10 sp=0xc020160bd0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160c50 sp=0xc020160c10 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160c90 sp=0xc020160c50 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160cd0 sp=0xc020160c90 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160d10 sp=0xc020160cd0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160d50 sp=0xc020160d10 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160d90 sp=0xc020160d50 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160dd0 sp=0xc020160d90 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160e10 sp=0xc020160dd0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160e50 sp=0xc020160e10 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160e90 sp=0xc020160e50 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160ed0 sp=0xc020160e90 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160f10 sp=0xc020160ed0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160f50 sp=0xc020160f10 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160f90 sp=0xc020160f50 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020160fd0 sp=0xc020160f90 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161010 sp=0xc020160fd0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161050 sp=0xc020161010 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161090 sp=0xc020161050 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201610d0 sp=0xc020161090 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161110 sp=0xc0201610d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161150 sp=0xc020161110 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161190 sp=0xc020161150 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201611d0 sp=0xc020161190 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161210 sp=0xc0201611d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161250 sp=0xc020161210 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161290 sp=0xc020161250 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201612d0 sp=0xc020161290 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161310 sp=0xc0201612d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161350 sp=0xc020161310 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161390 sp=0xc020161350 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201613d0 sp=0xc020161390 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161410 sp=0xc0201613d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161450 sp=0xc020161410 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161490 sp=0xc020161450 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201614d0 sp=0xc020161490 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161510 sp=0xc0201614d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161550 sp=0xc020161510 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161590 sp=0xc020161550 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201615d0 sp=0xc020161590 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161610 sp=0xc0201615d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161650 sp=0xc020161610 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161690 sp=0xc020161650 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201616d0 sp=0xc020161690 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161710 sp=0xc0201616d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161750 sp=0xc020161710 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161790 sp=0xc020161750 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201617d0 sp=0xc020161790 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161810 sp=0xc0201617d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161850 sp=0xc020161810 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161890 sp=0xc020161850 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201618d0 sp=0xc020161890 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161910 sp=0xc0201618d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161950 sp=0xc020161910 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161990 sp=0xc020161950 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc0201619d0 sp=0xc020161990 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161a10 sp=0xc0201619d0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161a50 sp=0xc020161a10 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161a90 sp=0xc020161a50 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161ad0 sp=0xc020161a90 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161b10 sp=0xc020161ad0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161b50 sp=0xc020161b10 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161b90 sp=0xc020161b50 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161bd0 sp=0xc020161b90 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161c10 sp=0xc020161bd0 pc=0x121f0e5
+base3/gee.(*RouterGroup).addRoute(0x0?, {0x12824b1?, 0x0?}, {0x12f6020?, 0x0?}, 0x0?)
+	/Users/wzd/Documents/gomode/gee_web/day4-group/gee/gee.go:44 +0x25 fp=0xc020161c50 sp=0xc020161c10 pc=0x121f0e5
+...additional frames elided...
+
+goroutine 2 [force gc (idle)]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/proc.go:363 +0xd6 fp=0xc00004efb0 sp=0xc00004ef90 pc=0x1038356
+runtime.goparkunlock(...)
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/proc.go:369
+runtime.forcegchelper()
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/proc.go:302 +0xad fp=0xc00004efe0 sp=0xc00004efb0 pc=0x10381ed
+runtime.goexit()
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00004efe8 sp=0xc00004efe0 pc=0x1064f41
+created by runtime.init.6
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/proc.go:290 +0x25
+
+goroutine 3 [GC sweep wait]:
+runtime.gopark(0x0?, 0x0?, 0x0?, 0x0?, 0x0?)
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/proc.go:363 +0xd6 fp=0xc00004f790 sp=0xc00004f770 pc=0x1038356
+runtime.goparkunlock(...)
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/proc.go:369
+runtime.bgsweep(0x0?)
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/mgcsweep.go:278 +0x8e fp=0xc00004f7c8 sp=0xc00004f790 pc=0x102540e
+runtime.gcenable.func1()
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/mgc.go:178 +0x26 fp=0xc00004f7e0 sp=0xc00004f7c8 pc=0x101a2c6
+runtime.goexit()
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00004f7e8 sp=0xc00004f7e0 pc=0x1064f41
+created by runtime.gcenable
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/mgc.go:178 +0x6b
+
+goroutine 4 [GC scavenge wait]:
+runtime.gopark(0xc000076000?, 0x12f6068?, 0x1?, 0x0?, 0x0?)
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/proc.go:363 +0xd6 fp=0xc00004ff70 sp=0xc00004ff50 pc=0x1038356
+runtime.goparkunlock(...)
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/proc.go:369
+runtime.(*scavengerState).park(0x1470b00)
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/mgcscavenge.go:389 +0x53 fp=0xc00004ffa0 sp=0xc00004ff70 pc=0x10234b3
+runtime.bgscavenge(0x0?)
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/mgcscavenge.go:617 +0x45 fp=0xc00004ffc8 sp=0xc00004ffa0 pc=0x1023a85
+runtime.gcenable.func2()
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/mgc.go:179 +0x26 fp=0xc00004ffe0 sp=0xc00004ffc8 pc=0x101a266
+runtime.goexit()
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00004ffe8 sp=0xc00004ffe0 pc=0x1064f41
+created by runtime.gcenable
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/mgc.go:179 +0xaa
+
+goroutine 5 [finalizer wait]:
+runtime.gopark(0x1471080?, 0xc000007860?, 0x0?, 0x0?, 0xc00004e770?)
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/proc.go:363 +0xd6 fp=0xc00004e628 sp=0xc00004e608 pc=0x1038356
+runtime.goparkunlock(...)
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/proc.go:369
+runtime.runfinq()
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/mfinal.go:180 +0x10f fp=0xc00004e7e0 sp=0xc00004e628 pc=0x10193cf
+runtime.goexit()
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/asm_amd64.s:1594 +0x1 fp=0xc00004e7e8 sp=0xc00004e7e0 pc=0x1064f41
+created by runtime.createfing
+	/usr/local/Cellar/go/1.19.2/libexec/src/runtime/mfinal.go:157 +0x45
+exit status 2
